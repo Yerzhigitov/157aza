@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Газель Павлодар ⇄ Астана | Автовышка Павлодар</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("gazel.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.hero-content {
+    animation: fadeUp 1.2s ease;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+    color: #e5e7eb;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 28px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background: #16a34a;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    animation: fadeUp 1s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.map-box {
+    max-width: 900px;
+    margin: auto;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 24px;
+}
+
+.route {
+    font-size: 30px;
+    font-weight: bold;
+    color: #facc15;
+}
+
+.contacts {
+    background: #020617;
+}
+
+.phone {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 32px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    animation: pulse 1.6s infinite;
+    z-index: 999;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    color: #94a3b8;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .route {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Грузоперевозки 24/7</h1>
+        <p>Газель Павлодар ⇄ Астана<br>Автовышка по г. Павлодар</p>
+        <a class="btn" href="tel:+77052623298">Позвонить</a>
+        <a class="btn" href="https://wa.me/77052623298">WhatsApp</a>
+    </div>
+</div>
+
+<section>
+    <h2>Наши услуги</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="gazel.jpg" alt="Газель">
+            <div class="card-content">
+                <h2>🚛 Газель</h2>
+                <p>
+                    Грузоперевозки по маршруту:<br>
+                    Павлодар → Астана<br>
+                    Астана → Павлодар<br><br>
+                    Работаем 24/7
+                </p>
+                <a class="btn" href="tel:+77052623298">Заказать Газель</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="avtovyshka.jpg" alt="Автовышка">
+            <div class="card-content">
+                <h2>🏗 Автовышка</h2>
+                <p>
+                    Услуги автовышки по г. Павлодар.<br>
+                    Для монтажа, ремонта, вывесок, освещения и высотных работ.
+                </p>
+                <a class="btn" href="tel:+77754287189">Заказать автовышку</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="map-box">
+        <h2>Маршрут Газели</h2>
+        <div class="route">Павлодар ⇄ Астана</div>
+        <p>Ежедневно, в любое время. Быстро, аккуратно, надежно.</p>
+    </div>
+</section>
+
+<section class="contacts">
+    <h2>Контакты</h2>
+    <div class="phone">📞 8705 262 32 98</div>
+    <div class="phone">📞 8775 428 71 89</div>
+
+    <a class="btn" href="tel:+77052623298">Позвонить</a>
+    <a class="btn" href="https://wa.me/77052623298">Написать в WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Газель Павлодар ⇄ Астана | Автовышка Павлодар
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/77052623298">☏</a>
+
+</body>
+</html>
